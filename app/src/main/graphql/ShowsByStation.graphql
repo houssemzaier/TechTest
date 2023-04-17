@@ -1,0 +1,11 @@
+query ShowsByStation($station: StationsEnum!) {
+    shows(station: $station) {
+        edges {
+            node {
+                id
+                title
+                standFirst
+            }
+        }
+    }
+}
